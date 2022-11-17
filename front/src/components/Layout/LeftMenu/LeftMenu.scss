@@ -1,0 +1,66 @@
+.left-menu {
+  top: 75px;
+  height: calc(100vh - 75px);
+  width: 200px;
+  background-color: white;
+  border-right: solid 1px black;
+  user-select: none;
+  float: left;
+
+  &__title {
+    font-size: 1.5em;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  &__parts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__part {
+    font-size: 1.2em;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    &__item {
+      padding: 5px 10px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(226, 226, 226);
+      }
+
+      &:active {
+        background-color: lightgray;
+      }
+
+      &:not(.single)::after {
+        content: "\25BE";
+        float: right;
+      }
+
+      &:not(.single).opened::after {
+        content: "\25B4";
+        float: right;
+      }
+    }
+
+    &__subitem {
+      display: none;
+      padding: 3.5px 20px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(226, 226, 226);
+      }
+
+      &:active {
+        background-color: lightgray;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.nav {
+  height: 74px;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid 1px black;
+
+  display: flex;
+
+  &__lft-mn-btn {
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    padding: 0px 20px;
+    font-size: 2em;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}

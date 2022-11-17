@@ -1,0 +1,9 @@
+.layout {
+    width: 100%;
+    height: calc(100vh - 75px);
+
+    .page {
+        height: calc(100vh - 75px);
+        overflow: auto;
+    }
+}

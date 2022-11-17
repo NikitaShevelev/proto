@@ -1,0 +1,18 @@
+.left-menu-buttom {
+  font-size: 2em;
+  width: 37.5px;
+  height: 37.5px;
+  text-align: center;
+  border: solid 1px transparent;
+  user-select: none;
+
+  &:hover {
+    border: solid 1px gray;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &:active {
+    border: solid 1px black;
+  }
+}

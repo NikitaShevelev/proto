@@ -1,0 +1,29 @@
+.modal {
+  top: 0px;
+  position: fixed;
+  z-index: 222;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.600);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__body {
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 5px;
+    min-height: 100px;
+    min-width: 250px;
+  }
+
+  &__header {
+    padding: 5px 10px 5px;
+    font-size: 1.5em;
+    border-bottom: 1px solid gray;
+  }
+  &__content {
+    padding: 5px 10px;
+  }
+}

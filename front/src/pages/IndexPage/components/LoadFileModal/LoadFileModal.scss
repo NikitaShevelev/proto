@@ -1,0 +1,16 @@
+.file-area {
+  width: 500px;
+  height: 350px;
+  background-color: rgb(232, 232, 232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 1.25em;
+  font-style: italic;
+
+}
+
+input[type=file] {
+  display: none;
+}
